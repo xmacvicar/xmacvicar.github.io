@@ -30,6 +30,34 @@ export default function About() {
             are drawn from real work, sanitized to respect employer IP. The
             sample docs are projects I&rsquo;ve built end-to-end.
           </p>
+          <h2 style={{marginTop: '3rem'}}>Tools &amp; Experience</h2>
+          <div className="skill-section">
+            <div className="skill-group">
+              <div className="skill-group-label">Knowledge &amp; Documentation</div>
+              <div className="skill-tags">
+                {['Guru', 'Confluence', 'Contentstack', 'Zendesk', 'Intercom', 'Elevio', 'HelpJuice'].map(t => <span key={t} className="skill-tag">{t}</span>)}
+              </div>
+            </div>
+            <div className="skill-group">
+              <div className="skill-group-label">Project Management &amp; CRM</div>
+              <div className="skill-tags">
+                {['Wrike', 'Asana', 'Trello', 'Salesforce', 'Atlassian'].map(t => <span key={t} className="skill-tag">{t}</span>)}
+              </div>
+            </div>
+            <div className="skill-group">
+              <div className="skill-group-label">Technical</div>
+              <div className="skill-tags">
+                {['HTML / CSS / XML', 'APIs', 'AI Prompting', 'MCP'].map(t => <span key={t} className="skill-tag">{t}</span>)}
+              </div>
+            </div>
+            <div className="skill-group">
+              <div className="skill-group-label">Creative</div>
+              <div className="skill-tags">
+                {['Final Cut Pro X', 'Logic Pro', 'Video Editing', 'Branding & Copywriting'].map(t => <span key={t} className="skill-tag">{t}</span>)}
+              </div>
+            </div>
+          </div>
+
           <h2 style={{marginTop: '3rem'}}>Outside work</h2>
           <p>
             I&rsquo;m an active musician, an avid squash player, and a road cyclist.
