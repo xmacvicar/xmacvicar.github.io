@@ -31,6 +31,7 @@ export default function Home() {
         </section>
 
         <section className={styles.tracks}>
+
           <article className={styles.track}>
             <p className={styles.trackNumber}>01</p>
             <h2 className={styles.trackTitle}>
@@ -53,6 +54,22 @@ export default function Home() {
             </p>
           </article>
 
+        </section>
+
+        <section className={styles.builtWith}>
+          <p className={styles.builtWithLabel}>How this site is built</p>
+          <div className={styles.builtWithItems}>
+            {[
+              { name: 'Docusaurus', detail: 'static site framework' },
+              { name: 'Git', detail: 'version control' },
+              { name: 'GitHub Actions', detail: 'CI/CD deployment' },
+            ].map(({ name, detail }) => (
+              <div key={name} className={styles.builtWithItem}>
+                <span className={styles.builtWithName}>{name}</span>
+                <span className={styles.builtWithDetail}>{detail}</span>
+              </div>
+            ))}
+          </div>
         </section>
       </main>
     </Layout>

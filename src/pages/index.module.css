@@ -126,6 +126,59 @@
   max-width: 28rem;
 }
 
+.builtWith {
+  margin-top: 5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+[data-theme='dark'] .builtWith {
+  border-top-color: rgba(255, 255, 255, 0.06);
+}
+
+.builtWithLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+  opacity: 0.5;
+  margin-bottom: 1.25rem;
+}
+
+.builtWithItems {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.builtWithItem {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(43, 58, 85, 0.05);
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  flex: 1;
+}
+
+[data-theme='dark'] .builtWithItem {
+  background-color: rgba(212, 184, 150, 0.07);
+}
+
+.builtWithName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.builtWithDetail {
+  font-size: 0.78rem;
+  color: var(--ifm-font-color-base);
+  opacity: 0.5;
+  margin-top: 0.2rem;
+}
+
 @media (max-width: 768px) {
   .main {
     padding: 2rem 1.5rem 4rem;
