@@ -16,9 +16,8 @@ This new app replaces the scanning app from previous years - if you've used that
 
 ## Download The App
 
-iOS - Visit the Apple App Store to download Event Scan.
-
-Android - Visit the Google Play Store to download Event Scan.
+- iOS — <a href="https://apps.apple.com/us/app/ticketleap-scan/id6444365632" target="_blank" rel="noopener noreferrer">Download Event Scan on the App Store</a>
+- Android — <a href="https://play.google.com/store/apps/details?id=com.ticketleap.scanner&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Download Event Scan on Google Play</a>
 
 ## Setting Up The App
 
