@@ -39,7 +39,7 @@ You can access this menu later to edit your selection by tapping the **Setup** b
 
 Choose your events for scanning. By default, all of the current-day events are displayed. Filter events by tapping the date parameters at the top (Tomorrow, Yesterday, Range, or Search).
 
-<img src={require('./img/selectevents.png').default} alt="Select Events" width="300" />
+<img src={require('./img/selectevents.png').default} alt="Select Events" width="250" />
 
 Once you finish selecting events, tap **Continue** — the button shows how many events you selected.
 

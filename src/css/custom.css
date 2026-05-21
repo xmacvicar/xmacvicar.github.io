@@ -85,12 +85,6 @@ h1 {
   margin-bottom: var(--spacing-block);
 }
 
-.markdown > p,
-.markdown > ul,
-.markdown > ol {
-  max-width: 68ch;
-}
-
 .markdown h1,
 .markdown h2 {
   margin-top: var(--spacing-section);
@@ -115,6 +109,13 @@ h1 {
 
 [data-theme='dark'] .markdown a {
   text-decoration-color: rgba(212, 184, 150, 0.4);
+}
+
+/* ─── Images ───────────────────────────────────────────────────────────────── */
+
+.markdown img {
+  display: block;
+  margin: 1.75rem auto;
 }
 
 /* ─── Admonitions ──────────────────────────────────────────────────────────── */
