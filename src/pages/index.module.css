@@ -1,0 +1,140 @@
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+.hero {
+  padding: 3rem 0 5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 4rem;
+}
+
+[data-theme='dark'] .hero {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.heroTitle {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  margin: 0 0 2rem;
+  font-variation-settings: 'opsz' 144;
+}
+
+.heroLede {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 38rem;
+  color: var(--ifm-font-color-base);
+  opacity: 0.85;
+  margin-bottom: 2.5rem;
+}
+
+.heroLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.primaryLink {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ifm-color-primary);
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.primaryLink:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+}
+
+.secondaryLink {
+  font-size: 1.05rem;
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.secondaryLink:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem 4rem;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+}
+
+.trackNumber {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ifm-color-primary);
+  opacity: 0.6;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.trackTitle {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+  line-height: 1.1;
+}
+
+.trackTitle a {
+  color: var(--ifm-heading-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.trackTitle a:hover {
+  text-decoration: none;
+  border-bottom-color: var(--ifm-color-primary);
+}
+
+.trackDesc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+  opacity: 0.8;
+  margin: 0;
+  max-width: 28rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem 1.5rem 4rem;
+  }
+  .heroLinks {
+    gap: 1.5rem;
+  }
+}
