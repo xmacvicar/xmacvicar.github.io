@@ -1,4 +1,4 @@
-# David MacVicar — Portfolio
+# David MacVicar Portfolio
 
 Knowledge management and technical writing portfolio. Live at [xmacvicar.github.io](https://xmacvicar.github.io).
 

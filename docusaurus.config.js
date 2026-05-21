@@ -40,18 +40,7 @@ const config = {
           editUrl:
             'https://github.com/xmacvicar/portfolio/tree/main/',
         },
-        blog: {
-          path: 'blog',
-          routeBasePath: 'writing',
-          showReadingTime: true,
-          blogTitle: 'Writing',
-          blogDescription: 'Essays on knowledge management, content governance, and technical writing.',
-          postsPerPage: 10,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -99,7 +88,6 @@ const config = {
             label: 'Case Studies',
             position: 'left',
           },
-          {to: '/writing', label: 'Writing', position: 'left'},
           {to: '/about', label: 'About', position: 'left'},
           {
             href: 'https://github.com/xmacvicar',
@@ -116,7 +104,6 @@ const config = {
             items: [
               {label: 'Sample Docs', to: '/docs/intro'},
               {label: 'Case Studies', to: '/case-studies/intro'},
-              {label: 'Writing', to: '/writing'},
             ],
           },
           {

@@ -6,6 +6,18 @@ const sidebars = {
     'intro',
     {
       type: 'category',
+      label: 'Event Scan App',
+      collapsed: false,
+      items: [
+        'event-scan-app/intro',
+        'event-scan-app/scanning-tickets',
+        'event-scan-app/order-search',
+        'event-scan-app/scan-stats',
+        'event-scan-app/troubleshooting',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Obsidian PKM Guide',
       collapsed: false,
       items: [

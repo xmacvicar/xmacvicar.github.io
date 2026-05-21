@@ -24,13 +24,11 @@
 }
 
 .heroTitle {
-  font-family: 'Fraunces', Georgia, serif;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.035em;
   margin: 0 0 2rem;
-  font-variation-settings: 'opsz' 144;
 }
 
 .heroLede {
@@ -90,18 +88,16 @@
 }
 
 .trackNumber {
-  font-family: 'Fraunces', Georgia, serif;
-  font-size: 0.95rem;
-  font-style: italic;
-  font-weight: 400;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--ifm-color-primary);
   opacity: 0.6;
   margin-bottom: 1rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .trackTitle {
-  font-family: 'Fraunces', Georgia, serif;
   font-size: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.02em;

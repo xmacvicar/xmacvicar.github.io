@@ -12,12 +12,12 @@ export default function Home() {
         <section className={styles.hero}>
           <p className={styles.eyebrow}>Portfolio</p>
           <h1 className={styles.heroTitle}>
-            Knowledge systems,<br/>written down.
+            Knowledge systems<br/>that work.
           </h1>
           <p className={styles.heroLede}>
             I&rsquo;m David MacVicar. I lead knowledge management and content
             operations, with a focus on governance, information architecture, and
-            making documentation actually get used. This site collects sample
+            making documentation people actually reach for. This site collects sample
             docs, case studies from my work, and writing on how I think about KM.
           </p>
           <div className={styles.heroLinks}>

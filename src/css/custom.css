@@ -1,17 +1,13 @@
-/**
- * Custom styling: editorial, writer-focused.
- * Serif display for personality, clean sans for body, generous spacing.
- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+/* ─── Design tokens ────────────────────────────────────────────────────────── */
 
 :root {
-  /* Typography */
+  /* Fonts */
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --ifm-heading-font-family: 'Fraunces', Georgia, serif;
   --ifm-font-family-monospace: 'JetBrains Mono', ui-monospace, monospace;
 
-  /* Color palette: warm paper + deep ink */
+  /* Brand colours */
   --ifm-color-primary: #2b3a55;
   --ifm-color-primary-dark: #25334b;
   --ifm-color-primary-darker: #233047;
@@ -20,25 +16,33 @@
   --ifm-color-primary-lighter: #334563;
   --ifm-color-primary-lightest: #3a4f70;
 
+  /* Surface colours */
   --ifm-background-color: #fafaf7;
   --ifm-background-surface-color: #ffffff;
 
+  /* Text colours */
   --ifm-heading-color: #1a1a1a;
   --ifm-font-color-base: #2a2a2a;
 
+  /* Code */
   --ifm-code-font-size: 90%;
   --ifm-code-background: #f4f1ea;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
 
-  /* Spacing */
+  /* Layout */
   --ifm-spacing-horizontal: 1.5rem;
-  --ifm-leading: 1.7;
+
+  /* Type scale */
   --ifm-h1-font-size: 3rem;
   --ifm-h2-font-size: 2rem;
   --ifm-h3-font-size: 1.4rem;
+
+  /* Spacing scale */
+  --spacing-block: 1.25rem;   /* paragraph / list gap */
+  --spacing-section: 2.5rem;  /* before H2 */
+  --spacing-subsection: 2rem; /* before H3/H4 */
 }
 
-/* Dark mode */
 [data-theme='dark'] {
   --ifm-color-primary: #d4b896;
   --ifm-color-primary-dark: #cba775;
@@ -50,30 +54,35 @@
 
   --ifm-background-color: #1a1816;
   --ifm-background-surface-color: #232120;
-
   --ifm-heading-color: #f5f1ea;
   --ifm-font-color-base: #d4cfc6;
-
   --ifm-code-background: #2a2826;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
-/* Headings: serif with tight tracking */
+/* ─── Global headings ──────────────────────────────────────────────────────── */
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ifm-heading-font-family);
-  font-variation-settings: 'opsz' 144;
-  letter-spacing: -0.02em;
+  font-family: var(--ifm-font-family-base);
   font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h1 {
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
-/* Article body: comfortable measure */
+/* ─── Article typography ───────────────────────────────────────────────────── */
+
 .markdown {
   line-height: 1.75;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol {
+  margin-bottom: var(--spacing-block);
 }
 
 .markdown > p,
@@ -82,12 +91,16 @@ h1 {
   max-width: 68ch;
 }
 
-.markdown > h1,
-.markdown > h2 {
-  margin-top: 2.5rem;
+.markdown h1,
+.markdown h2 {
+  margin-top: var(--spacing-section);
 }
 
-/* Links */
+.markdown h3,
+.markdown h4 {
+  margin-top: var(--spacing-subsection);
+}
+
 .markdown a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -104,7 +117,33 @@ h1 {
   text-decoration-color: rgba(212, 184, 150, 0.4);
 }
 
-/* Navbar: minimal, no shadow */
+/* ─── Admonitions ──────────────────────────────────────────────────────────── */
+
+.theme-admonition {
+  margin-top: var(--spacing-block);
+  margin-bottom: var(--spacing-block);
+}
+
+/* ─── Blockquotes ──────────────────────────────────────────────────────────── */
+
+blockquote {
+  border-left: 3px solid var(--ifm-color-primary);
+  background: transparent;
+  padding-left: 1.5rem;
+  font-style: italic;
+  color: var(--ifm-font-color-base);
+  opacity: 0.85;
+}
+
+/* ─── Code blocks ──────────────────────────────────────────────────────────── */
+
+.prism-code {
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* ─── Navbar ───────────────────────────────────────────────────────────────── */
+
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -118,7 +157,6 @@ h1 {
 }
 
 .navbar__title {
-  font-family: var(--ifm-heading-font-family);
   font-weight: 600;
   font-size: 1.1rem;
   letter-spacing: -0.01em;
@@ -128,23 +166,8 @@ h1 {
   font-size: 0.95rem;
 }
 
-/* Code blocks */
-.prism-code {
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
+/* ─── Footer ───────────────────────────────────────────────────────────────── */
 
-/* Blockquotes */
-blockquote {
-  border-left: 3px solid var(--ifm-color-primary);
-  background: transparent;
-  padding-left: 1.5rem;
-  font-style: italic;
-  color: var(--ifm-font-color-base);
-  opacity: 0.85;
-}
-
-/* Footer */
 .footer {
   background-color: transparent;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -155,7 +178,6 @@ blockquote {
 }
 
 .footer__title {
-  font-family: var(--ifm-heading-font-family);
   font-weight: 600;
   font-size: 0.9rem;
   text-transform: none;
