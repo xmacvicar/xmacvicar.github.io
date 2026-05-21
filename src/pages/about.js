@@ -23,7 +23,7 @@ export default function About() {
           </p>
           <p>
             Outside of Leap, I manage the YouTube channel and website brand for
-            AR Proformance, handling branding, video editing, and copy.
+            <a href="https://www.youtube.com/@ARProformance" target="_blank" rel="noopener noreferrer">AR Proformance</a>, handling branding, video editing, and copy. 
           </p>
           <p>
             This site is part portfolio, part working notebook. The case studies
