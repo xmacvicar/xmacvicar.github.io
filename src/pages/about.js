@@ -14,8 +14,8 @@ export default function About() {
             documentation actually useful to the people who need it.
           </p>
           <p>
-            As Director of Knowledge &amp; System Operations at <a href="https://leapevent.tech">Leap Event Technology</a>, I oversee our company-wide knowledge strategy, including
-            our Guru instance. I also serve as product owner for Fin, our
+            As Director of Knowledge &amp; System Operations at <a href="https://leapevent.tech" target="_blank" rel="noopener noreferrer">Leap Event Technology</a>,
+            I oversee our company-wide knowledge strategy. I also serve as product owner for Fin, our
             AI-powered support tool built on Intercom, leading our approach to
             AI-assisted customer support. Previously, I worked as a knowledge
             manager with Airbnb&rsquo;s Content &amp; Knowledge
@@ -33,13 +33,13 @@ export default function About() {
           <h2 style={{marginTop: '3rem'}}>Outside work</h2>
           <p>
             I&rsquo;m an active musician, an avid squash player, and a road cyclist.
-            Visit me at <a href="https://www.davidmacvicar.com">davidmacvicar.com</a>.
+            Visit me at <a href="https://www.davidmacvicar.com" target="_blank" rel="noopener noreferrer">davidmacvicar.com</a>.
           </p>
           <h2 style={{marginTop: '3rem'}}>Get in touch</h2>
           <p>
             <a href="mailto:davemacvicar@gmail.com">Email</a> &middot;{' '}
-            <a href="https://www.linkedin.com/in/davidmacvicar/">LinkedIn</a> &middot;{' '}
-            <a href="https://github.com/xmacvicar">GitHub</a>
+            <a href="https://www.linkedin.com/in/davidmacvicar/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &middot;{' '}
+            <a href="https://github.com/xmacvicar" target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
         </div>
       </main>
