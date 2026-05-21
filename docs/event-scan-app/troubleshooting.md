@@ -12,10 +12,11 @@ An error message built into the Android app regarding the backend download throt
 
 Solutions:
 
-You may see this message if you already have all the data downloaded for your event. 
-A workaround on iOS is to delete/re-install the app to circumvent this throttle. Android has a built-in function to delete app data/cache which accomplishes the same thing. 
+You may see this message if you already have all the data downloaded for your event. A workaround on iOS is to delete/re-install the app to circumvent this throttle. Android has a built-in function to delete app data/cache which accomplishes the same thing. 
+
 Alternatively, it may be related to the sync time. Check the sync time from the Advanced Settings in the Settings menu and it is recommended that you increase it to 60s (if applicable).
-Unable to Locate Event(s) to Download
+
+**Unable to Locate Event(s) to Download**
 
 Only upcoming events will display in the list of events available for download. If your upcoming event is not showing, swipe down to refresh the list.
 
