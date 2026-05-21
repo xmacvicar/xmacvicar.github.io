@@ -17,8 +17,8 @@ export default function Home() {
           <p className={styles.heroLede}>
             I&rsquo;m David MacVicar. I lead knowledge management and content
             operations, with a focus on governance, information architecture, and
-            making documentation people actually reach for. This site collects sample
-            docs, case studies from my work, and writing on how I think about KM.
+            making documentation people actually reach for. This site collects
+            sample docs and case studies from my work.
           </p>
           <div className={styles.heroLinks}>
             <Link to="/case-studies/intro" className={styles.primaryLink}>
@@ -53,16 +53,6 @@ export default function Home() {
             </p>
           </article>
 
-          <article className={styles.track}>
-            <p className={styles.trackNumber}>03</p>
-            <h2 className={styles.trackTitle}>
-              <Link to="/writing">Writing</Link>
-            </h2>
-            <p className={styles.trackDesc}>
-              Essays on content governance, knowledge management strategy, and
-              the organizational reality of doing this work.
-            </p>
-          </article>
         </section>
       </main>
     </Layout>
