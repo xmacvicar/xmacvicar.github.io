@@ -1,7 +1,7 @@
 ---
 id: deploy-static-site-vercel
 title: Deploy a Static Site to Vercel with a Custom Domain
-sidebar_position: 1
+sidebar_position: 2
 description: How to deploy a plain HTML/CSS site to Vercel using GitHub, and connect a custom domain with DNS configuration.
 ---
 
