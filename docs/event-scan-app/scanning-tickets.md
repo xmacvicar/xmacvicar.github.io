@@ -30,11 +30,11 @@ For tickets that have already been validated, tap **Check Out** to allow the tic
 
 Access scan settings by tapping the gear icon in the top right corner of the scanner view.
 
-- **Check Out Mode** — Off by default. Enable to check tickets out rather than in.
-- **Flashlight** — Off by default. Enable to activate the flashlight for low-light scanning.
-- **Vibrate on Scan** — Enable to make the device vibrate when a ticket is scanned.
-- **Sound on Scan** — Enable to emit a sound when a ticket is scanned.
-- **Battery Saver Mode** — When enabled, the camera turns off after 30 seconds of inactivity. Tap the screen to resume scanning.
+- **Check Out Mode**: Off by default. Enable to check tickets out rather than in.
+- **Flashlight**: Off by default. Enable to activate the flashlight for low-light scanning.
+- **Vibrate on Scan**: Enable to make the device vibrate when a ticket is scanned.
+- **Sound on Scan**: Enable to emit a sound when a ticket is scanned.
+- **Battery Saver Mode**: When enabled, the camera turns off after 30 seconds of inactivity. Tap the screen to resume scanning.
 
 :::tip
 Access scan history from the scanner screen.

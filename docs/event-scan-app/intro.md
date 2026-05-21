@@ -16,8 +16,8 @@ This new app replaces the scanning app from previous years - if you've used that
 
 ## Download The App
 
-- iOS — <a href="https://apps.apple.com/us/app/ticketleap-scan/id6444365632" target="_blank" rel="noopener noreferrer">Download Event Scan on the App Store</a>
-- Android — <a href="https://play.google.com/store/apps/details?id=com.ticketleap.scanner&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Download Event Scan on Google Play</a>
+- iOS: <a href="https://apps.apple.com/us/app/ticketleap-scan/id6444365632" target="_blank" rel="noopener noreferrer">Download Event Scan on the App Store</a>
+- Android: <a href="https://play.google.com/store/apps/details?id=com.ticketleap.scanner&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Download Event Scan on Google Play</a>
 
 ## Setting Up The App
 
@@ -41,7 +41,7 @@ Choose your events for scanning. By default, all of the current-day events are d
 
 <img src={require('./img/selectevents.png').default} alt="Select Events" width="250" />
 
-Once you finish selecting events, tap **Continue** — the button shows how many events you selected.
+Once you finish selecting events, tap **Continue**. The button shows how many events you selected.
 
 Your selected events appear in a list. All ticket types are selected by default for each event.
 

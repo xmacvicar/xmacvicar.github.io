@@ -6,7 +6,7 @@ import styles from './index.module.css';
 export default function Home() {
   return (
     <Layout
-      title="David MacVicar — KM & Technical Writing"
+      title="David MacVicar | KM & Technical Writing"
       description="Portfolio of knowledge management and technical writing work by David MacVicar.">
       <main className={styles.main}>
         <section className={styles.hero}>

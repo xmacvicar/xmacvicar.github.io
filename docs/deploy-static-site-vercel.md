@@ -18,12 +18,12 @@ This guide covers connecting a GitHub repository to Vercel, deploying a plain HT
 Before you start, you'll need:
 
 - A GitHub account with your site's code in a repository
-- A Vercel account (free tier is sufficient — sign up at [vercel.com](https://vercel.com))
+- A Vercel account (free tier is sufficient; sign up at [vercel.com](https://vercel.com))
 - A registered domain name (this guide uses Namecheap for DNS examples, but the steps are similar for other registrars)
 
 ## How Vercel deployment works
 
-Vercel watches a branch of your GitHub repository. When you push a commit, Vercel pulls the latest code, runs a build step if you have one, and publishes the output. For a plain HTML/CSS site there is no build step — Vercel serves your files directly.
+Vercel watches a branch of your GitHub repository. When you push a commit, Vercel pulls the latest code, runs a build step if you have one, and publishes the output. For a plain HTML/CSS site there is no build step. Vercel serves your files directly.
 
 Each push to your main branch triggers a production deployment. Pushes to other branches generate preview deployments at temporary URLs, which is useful for reviewing changes before they go live.
 
@@ -35,7 +35,7 @@ Each push to your main branch triggers a production deployment. Pushes to other 
 4. On the configuration screen:
    - **Framework Preset**: leave set to **Other** for a plain HTML/CSS site
    - **Root Directory**: leave as `/` unless your site files are in a subdirectory
-   - **Build and Output Settings**: leave blank — no build command is needed
+   - **Build and Output Settings**: leave blank (no build command is needed)
 5. Click **Deploy**.
 
 Vercel builds and deploys your site in about 30 seconds. When it finishes, you'll get a preview URL in the format `your-project-name.vercel.app`. Open it to confirm your site is live.
@@ -48,7 +48,7 @@ If your `index.html` is inside a subfolder rather than the root of the repo, set
 
 1. From your project dashboard, go to **Settings → Domains**.
 2. Type your domain (`yourdomain.com`) into the field and click **Add**.
-3. Vercel will display the DNS records you need to configure at your registrar. Keep this page open — you'll need these values in the next step.
+3. Vercel will display the DNS records you need to configure at your registrar. Keep this page open. You will need these values in the next step.
 
 Vercel typically provides one of two configurations:
 
@@ -80,7 +80,7 @@ Log in to your domain registrar and navigate to your domain's DNS settings. The 
 If your registrar created default A records or CNAME records when you registered the domain, delete them. Conflicting records will prevent Vercel from verifying your domain.
 
 :::warning
-DNS changes can take up to 48 hours to propagate globally, though in practice they usually resolve within 30 minutes to a few hours. Vercel will show your domain as **Invalid Configuration** until propagation is complete — this is expected.
+DNS changes can take up to 48 hours to propagate globally, though in practice they usually resolve within 30 minutes to a few hours. Vercel will show your domain as **Invalid Configuration** until propagation is complete. This is expected.
 :::
 
 ## Step 4: Verify and enable HTTPS
@@ -93,7 +93,7 @@ Vercel automatically provisions an SSL certificate via Let's Encrypt and enables
 
 Confirm that automatic deployments are working:
 
-1. Make a small change to your site locally — edit a line of text in `index.html`.
+1. Make a small change to your site locally by editing a line of text in `index.html`.
 2. Commit and push to your main branch:
 
 ```bash
@@ -115,7 +115,7 @@ Check that you deleted any pre-existing A records at your registrar that conflic
 
 **Site deploys but shows a 404**
 
-Vercel can't find your entry point. Confirm that `index.html` is in the root of your repository (or in the Root Directory you configured), and that the filename is lowercase — file names are case-sensitive on Vercel's servers.
+Vercel can't find your entry point. Confirm that `index.html` is in the root of your repository (or in the Root Directory you configured), and that the filename is lowercase. File names are case-sensitive on Vercel's servers.
 
 **Changes pushed to GitHub aren't triggering deployments**
 
