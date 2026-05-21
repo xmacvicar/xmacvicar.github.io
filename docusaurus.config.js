@@ -57,6 +57,14 @@ const config = {
         sidebarPath: require.resolve('./sidebars-case-studies.js'),
       },
     ],
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        docsRouteBasePath: ['docs', 'case-studies'],
+      },
+    ],
   ],
 
   themeConfig:

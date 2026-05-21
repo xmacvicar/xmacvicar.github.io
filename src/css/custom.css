@@ -208,6 +208,32 @@ blockquote {
   background-color: rgba(212, 184, 150, 0.1);
 }
 
+/* ─── Local search ─────────────────────────────────────────────────────────── */
+
+:root {
+  --search-local-modal-background: #ffffff;
+  --search-local-modal-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --search-local-hit-background: #fafaf7;
+  --search-local-hit-shadow: none;
+  --search-local-hit-color: #2a2a2a;
+  --search-local-highlight-color: #2b3a55;
+  --search-local-muted-color: rgba(42, 42, 42, 0.5);
+  --search-local-hit-active-color: #ffffff;
+  --search-local-input-active-border-color: #2b3a55;
+}
+
+[data-theme='dark'] {
+  --search-local-modal-background: #232120;
+  --search-local-modal-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --search-local-hit-background: #1a1816;
+  --search-local-hit-shadow: none;
+  --search-local-hit-color: #d4cfc6;
+  --search-local-highlight-color: #d4b896;
+  --search-local-muted-color: rgba(212, 207, 198, 0.5);
+  --search-local-hit-active-color: #1a1816;
+  --search-local-input-active-border-color: #d4b896;
+}
+
 /* ─── Footer ───────────────────────────────────────────────────────────────── */
 
 .footer {
