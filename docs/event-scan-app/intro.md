@@ -10,10 +10,6 @@ Would you like to scan tickets, look attendees up by name, and view live attenda
 
 Download our free mobile app, Event Scan, and start scanning! Event Scan runs on both iOS and Android devices.
 
-:::note
-This new app replaces the scanning app from previous years - if you've used that version in the past, you'll find that the new app is much different!
-:::
-
 ## Download The App
 
 - iOS: <a href="https://apps.apple.com/us/app/ticketleap-scan/id6444365632" target="_blank" rel="noopener noreferrer">Download Event Scan on the App Store</a>
